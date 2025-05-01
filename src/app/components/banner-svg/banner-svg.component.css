@@ -1,30 +1,94 @@
+:root {
+  --wave-color: rgba(77, 85, 203, 0.827); 
+  --wave-color-dos: #6666;
+  --wave-color-tres: rgba(0, 0, 0, 0.865);
+}
+
 .ola-path {
   fill: var(--wave-color);
 }
-:root {
-  --wave-color: limegreen; 
+
+.ola-path-dos {
+  fill: var(--wave-color-dos);
 }
-.olauno {
+
+.ola-path-tres {
+  fill: var(--wave-color-tres)
+}
+
+.contenedor-olas {
   position: relative;
-  height: 60px;
-  overflow: hidden;
+  height: 90px;
 }
 .ola {
   display: flex;
-  width: 2400px;
-  animation: onda 15s linear infinite;
+  width: 2400px; 
 }
+
 .ola svg {
   width: 1200px;
   height: 120px;
 }
+
+.olauno {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90px;
+
+}
+
+.olados {
+  height: 90px;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.ola-tres {
+  z-index: 0;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.fondo {
+  z-index: 1;
+}
+
+.frente {
+  z-index: 2;
+}
+.fondo, .frente {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .volteado{
   transform: rotate(180deg);
 }
-@keyframes onda {
+.olaizquierda {
+  animation: onda-izquierda 250s linear infinite;
+}
+.ola-mas-alta {
+  display: flex;
+  width: 3000px;
+  animation: onda-tres 20s linear infinite;
+}
+.oladerecha {
+  animation: onda-derecha 10s linear infinite;
+}
+
+@keyframes onda-izquierda {
   from { transform: translateX(0); }
   to { transform: translateX(-1200px); }
 }
-body {
-  background: red; 
+
+@keyframes onda-derecha {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1200px); }
+}
+@keyframes onda-tres {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1500px); }
 }
