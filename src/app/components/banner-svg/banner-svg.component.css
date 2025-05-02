@@ -155,3 +155,6 @@
     transform: translateX(-1200px);
   }
 }
+.body{
+  background-color: rgba(13, 13, 93, 0.67);
+}

@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-name',
@@ -6,9 +6,9 @@ import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./name.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class NameComponent implements AfterViewInit {
+export class NameComponent {
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     document.querySelectorAll('.button').forEach(button => {
       const icon = button.querySelector('i');
       const textNode = button.childNodes[button.childNodes.length - 1];
