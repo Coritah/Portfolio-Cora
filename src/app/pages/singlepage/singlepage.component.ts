@@ -1,25 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 
 @Component({
   selector: 'app-singlepage',
-  imports: [BannerSvgComponent],
+  imports: [BannerSvgComponent,],
   templateUrl: './singlepage.component.html',
-  styleUrl: './singlepage.component.css'
+  styleUrl: './singlepage.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class SinglepageComponent {
 
   ngOnInit(): void {
     document.querySelectorAll('.button').forEach(button => {
       const icon = button.querySelector('i');
-      const textNode = button.childNodes[button.childNodes.length - 1];
-      if (!textNode || textNode.nodeType !== Node.TEXT_NODE) return;
+      const textSpan = button.querySelector('.text');
   
-      const originalText = textNode.textContent?.trim() || '';
+      if (!textSpan) return;
+  
+      const originalText = textSpan.textContent!.trim();
       const div = document.createElement('div');
-      const letters = originalText.split('');
-  
-      letters.forEach((letter, index, array) => {
+      div.classList.add('content');
+
+      originalText.split('').forEach((letter, index, array) => {
         const span = document.createElement('span');
         const part = index >= array.length / 2 ? -1 : 1;
         const position = index >= array.length / 2
@@ -27,24 +29,27 @@ export class SinglepageComponent {
           : index;
         const move = position / (array.length / 2);
         const rotate = 1 - move;
-  
+      
         span.innerHTML = letter === ' ' ? '&nbsp;' : letter;
         span.style.setProperty('--move', move.toString());
         span.style.setProperty('--rotate', rotate.toString());
         span.style.setProperty('--part', part.toString());
+      
+        span.style.animationDelay = `${index * 0.05}s`;
+      
         div.appendChild(span);
       });
-  
-      div.classList.add('content');
-      button.innerHTML = ''; 
-      if (icon) button.appendChild(icon); 
-      button.appendChild(div); 
+
+      button.innerHTML = '';
+      if (icon) button.appendChild(icon);
+      button.appendChild(div);
       button.addEventListener('mouseenter', () => {
+        console.log('Mouse enter');
         button.classList.add('in');
         div.classList.add('animate');
       });
-  
       button.addEventListener('mouseleave', () => {
+        console.log('Mouse leave');
         button.classList.remove('in');
         div.classList.remove('animate');
       });
