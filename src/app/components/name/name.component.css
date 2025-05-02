@@ -1,0 +1,66 @@
+.button {
+  padding: 8px 28px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+}
+
+.button.alternative {
+  background: #362A89;
+  --hover-back: #000000;
+  --hover-front: #F6F8FF;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  background: var(--pb, var(--hover-back));
+  border-radius: var(--br, 40%);
+  transform: translateY(var(--y, 50%));
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button::after {
+  --pb: var(--hover-front);
+}
+
+.button.in::before,
+.button.in::after {
+  --y: 0;
+  --br: 10%;
+}
+
+.button .content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+}
+
+.button .content span {
+  display: block;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.3s ease; 
+}
+
+.button .content.animate span {
+  animation: move 0.5s linear forwards 0.1s;
+}
+
+@keyframes move {
+  30%, 36% {
+    transform: translateY(calc(-6px * var(--move))) rotate(calc(-13deg * var(--rotate) * var(--part)));
+  }
+}
