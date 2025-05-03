@@ -2,7 +2,7 @@
   --wave-color: rgba(77, 85, 203, 0.827);
   --wave-color-dos: #6666;
   --wave-color-tres: rgba(0, 0, 0, 0.29);
-  --line-color: #fff;
+  --line-color: #ffffffab;
 }
 
 .ola-path {
@@ -25,6 +25,7 @@
   overflow: hidden;
 }
 .grupo-olas {
+  margin-top: 10px;
   position: relative;
   height: 240px;
 }
@@ -85,7 +86,7 @@
   fill: none;
 }
 .ola-linea {
-  display: flex;
+  display: flex;;
   width: 2400px;
   animation: moverOlaLinea 20s linear infinite;
 }
@@ -149,9 +150,9 @@
 
 @keyframes moverOlaLinea {
   0% {
-    transform: translateX(0);
+    transform: translateX(-1200px);
   }
   100% {
-    transform: translateX(-1200px);
+    transform: translateX(0);
   }
 }
