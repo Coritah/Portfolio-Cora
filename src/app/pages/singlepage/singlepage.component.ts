@@ -56,5 +56,12 @@ export class SinglepageComponent {
       });
     });
   }
+  // Scroll 
+  scrollToSection(sectionId: string): void {
+    const pyts = document.getElementById(sectionId);
+    if (pyts) {
+      pyts.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   
 }
