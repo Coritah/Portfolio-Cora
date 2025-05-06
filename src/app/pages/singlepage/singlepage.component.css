@@ -1,7 +1,13 @@
-body{
+body {
+  position: relative;
+  margin: 0;
+  height: 200vh; /* más alto para poder ver el efecto hacia abajo */
   background-image: url("../../../assets/image/japaneasy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   background-repeat: repeat-y;
-background-size: cover;
+  background-attachment: fixed;
 }
 .hero-container {
     position: relative;

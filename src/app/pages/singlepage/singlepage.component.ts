@@ -2,10 +2,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { ToolsComponent } from "../../components/tools/tools.component";
+import { TechnologysComponent } from "../../components/technologys/technologys.component";
 
 @Component({
   selector: 'app-singlepage',
-  imports: [BannerSvgComponent, ProjectsComponent, ToolsComponent],
+  imports: [BannerSvgComponent, ProjectsComponent, ToolsComponent, TechnologysComponent],
   templateUrl: './singlepage.component.html',
   styleUrl: './singlepage.component.css',
   encapsulation: ViewEncapsulation.None,

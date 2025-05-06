@@ -3,7 +3,7 @@ import { Technologies } from '../../../../interfaces/portfolio.interface';
 import { PortfolioService } from '../../services/porfolio.service';
 
 @Component({
-  selector: 'app-technologys',
+  selector: 'technologys',
   templateUrl: './technologys.component.html',
   styleUrls: ['./technologys.component.css'],
   standalone: true,
