@@ -23,8 +23,9 @@
     </button>
   </div>
   
-
+<div class="ondasbnn">
   <banner-svg></banner-svg>
+</div>
 
   <div class="nav-btns">
     <div class="mini-btns">
@@ -34,7 +35,7 @@
       </button>
     </div>
     <div class="mini-btns">
-      <button class="circle-glow">
+      <button class="circle-glow" (click)="scrollToSection('tools')">
         <span class="label">Herramientas</span>
         <span class="dot"></span>
       </button>
@@ -49,4 +50,8 @@
 </section>
 <section id="proyectos">
   <projects></projects>
+</section>
+
+<section id="tools">
+  <tools></tools>
 </section>
