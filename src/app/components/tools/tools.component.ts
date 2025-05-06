@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, } from '@angular/core';
 import { Tool } from '../../../../interfaces/portfolio.interface';
 import { PortfolioService } from '../../services/porfolio.service';
 
@@ -6,12 +6,12 @@ import { PortfolioService } from '../../services/porfolio.service';
   selector: 'tools',
   templateUrl: './tools.component.html',
   styleUrls: ['./tools.component.css'],
-  standalone: true,
 })
 export class ToolsComponent {
-
-  tools: Tool[] = [];
+  
   private portfolioService = inject(PortfolioService);
+  tools: Tool[] = [];
+  selectedTool: Tool | null = null;
 
   async ngOnInit() {
     try {

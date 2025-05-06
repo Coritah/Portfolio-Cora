@@ -12,6 +12,7 @@ export interface EmergencyContact {
 
 export interface Contact {
   name: string;
+  description: String; 
   surname: string;
   email: string;
   phone: string;
@@ -22,6 +23,8 @@ export interface Contact {
 
 export interface Project {
   name: string;
+  description: String; 
+  image:String;
   tools: string[];
   startDate: string;
   endDate: string;

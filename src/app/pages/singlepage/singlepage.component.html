@@ -1,6 +1,6 @@
 <section class="hero-container">
   <div class="text-zone container text-center">
-    <h1>Cora Y. Courbenas</h1>
+    <h1>{{ contact.name }} {{ contact.surname }}</h1>
     <h2>FullStack Developer</h2>
     <div class="disponible-badge">
       <span class="punto"></span>
@@ -10,6 +10,7 @@
   </div>
 
   <div class="btns">
+    <h3>{{ contact.description }}</h3>
     <button class="button alternative">
       <i class="fas fa-download"></i> <span class="text">Descargar CV</span>
     </button>

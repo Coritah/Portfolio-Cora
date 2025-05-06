@@ -1,8 +1,10 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { ToolsComponent } from "../../components/tools/tools.component";
 import { TechnologysComponent } from "../../components/technologys/technologys.component";
+import { Contact, Portfolio } from '../../../../interfaces/portfolio.interface';
+import { PortfolioService } from '../../services/porfolio.service';
 
 @Component({
   selector: 'app-singlepage',
@@ -12,8 +14,14 @@ import { TechnologysComponent } from "../../components/technologys/technologys.c
   encapsulation: ViewEncapsulation.None,
 })
 export class SinglepageComponent {
+  contact!: Contact;
+  private portfolioService = inject(PortfolioService);
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+
+    const portfolio: Portfolio = await this.portfolioService.getLastPortfolio();
+    this.contact = portfolio.contact;
+
     document.querySelectorAll('.button').forEach(button => {
       const icon = button.querySelector('i');
       const textSpan = button.querySelector('.text');

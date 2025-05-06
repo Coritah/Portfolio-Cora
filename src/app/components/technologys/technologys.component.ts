@@ -6,17 +6,12 @@ import { PortfolioService } from '../../services/porfolio.service';
   selector: 'technologys',
   templateUrl: './technologys.component.html',
   styleUrls: ['./technologys.component.css'],
-  standalone: true,
 })
 export class TechnologysComponent {
-  technologies!: Technologies;
   private portfolioService = inject(PortfolioService);
+  technologies!: Technologies;
 
-  constructor() {
-    this.loadTechnologies();
-  }
-
-  private async loadTechnologies() {
+  async ngOnInit() {
     try {
       const portfolio = await this.portfolioService.getLastPortfolio();
       this.technologies = portfolio.technologies;
@@ -24,4 +19,4 @@ export class TechnologysComponent {
       console.error('Error al cargar:', error);
     }
   }
-}
+  }
