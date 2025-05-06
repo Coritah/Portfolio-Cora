@@ -21,7 +21,11 @@ export class ToolsComponent {
       console.error('Error cargando portfolio:', error);
     }
   }
-  selectTool(tool: Tool) {
+  openModal(tool: Tool): void {
     this.selectedTool = tool;
+  }
+  
+  closeModal(): void {
+    this.selectedTool = null;
   }
 }

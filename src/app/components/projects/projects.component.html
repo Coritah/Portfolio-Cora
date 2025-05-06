@@ -6,7 +6,7 @@
         <img [src]="project.image || 'default.jpg'" [alt]="project.name">
         <div class="project-info">
           <h3>{{ project.name }}</h3>
-          <p>{{ project.description }}</p>
+          <span>{{ project.description }}</span>
           <small>{{ project.startDate }} - {{ project.endDate }}</small>
           <ul>
             @for (tool of project.tools; track tool) {
