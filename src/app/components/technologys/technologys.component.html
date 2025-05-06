@@ -1,0 +1,30 @@
+<p>technologys works!</p>
+<h2>Tecnologías</h2>
+
+<h3>Lenguajes</h3>
+<ul>
+  @for (lang of technologies.languages; track lang.name) {
+    <li><strong>{{ lang.name }}:</strong> {{ lang.description }}</li>
+  }
+</ul>
+
+<h3>Frameworks</h3>
+<ul>
+  @for (fw of technologies.frameworks; track fw.name) {
+    <li><strong>{{ fw.name }}:</strong> {{ fw.description }}</li>
+  }
+</ul>
+
+<h3>Bases de Datos</h3>
+<ul>
+  @for (db of technologies.databases; track db.name) {
+    <li><strong>{{ db.name }}:</strong> {{ db.description }}</li>
+  }
+</ul>
+
+<h3>Servicios en la nube</h3>
+<ul>
+  @for (cs of technologies.cloudServices; track cs.name) {
+    <li><strong>{{ cs.name }}:</strong> {{ cs.description }}</li>
+  }
+</ul>

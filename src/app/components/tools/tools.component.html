@@ -1,1 +1,9 @@
 <p>tools works!</p>
+<h2>Herramientas</h2>
+<ul>
+  @for (tool of tools; track tool.name) {
+    <li>
+      <strong>{{ tool.name }}:</strong> {{ tool.description }} <em>({{ tool.category }})</em>
+    </li>
+  }
+</ul>

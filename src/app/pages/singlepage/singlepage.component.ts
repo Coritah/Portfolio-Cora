@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
-import { ToolsComponent } from '../../components/tools/tools.component';
+import { ToolsComponent } from "../../components/tools/tools.component";
 
 @Component({
   selector: 'app-singlepage',
