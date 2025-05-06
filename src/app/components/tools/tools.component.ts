@@ -21,4 +21,7 @@ export class ToolsComponent {
       console.error('Error cargando portfolio:', error);
     }
   }
+  selectTool(tool: Tool) {
+    this.selectedTool = tool;
+  }
 }
