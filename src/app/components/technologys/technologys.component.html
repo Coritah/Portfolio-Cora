@@ -1,8 +1,8 @@
+<p>Tecnologías</p>
 <div class="container py-5">
-  <h2 class="mb-5">Tecnologías</h2>
   <div class="row g-4">
     
-    <div class="col-12 col-md-6 col-xl-3">
+    <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Lenguajes</h3>
         <ul>
@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-xl-3">
+    <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Frameworks</h3>
         <ul>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-xl-3">
+    <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Bases de Datos</h3>
         <ul>
@@ -35,12 +35,34 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-xl-3">
+    <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Servicios en la nube</h3>
         <ul>
           @for (cs of technologies.cloudServices; track cs.name) {
             <li><strong>{{ cs.name }}:</strong> {{ cs.description }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="tech-card">
+        <h3>Runtimes</h3>
+        <ul>
+          @for (rt of technologies.runtimes; track rt.name) {
+            <li><strong>{{ rt.name }}:</strong> {{ rt.description }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="tech-card">
+        <h3>Control de versiones</h3>
+        <ul>
+          @for (vc of technologies.versionControl; track vc.name) {
+            <li><strong>{{ vc.name }}:</strong> {{ vc.description }}</li>
           }
         </ul>
       </div>

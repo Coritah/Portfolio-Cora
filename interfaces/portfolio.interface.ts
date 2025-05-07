@@ -48,6 +48,8 @@ export interface Technologies {
   frameworks: Technology[];
   databases: Technology[];
   cloudServices: Technology[];
+  runtimes: Technology[];
+  versionControl: Technology[];
 }
 
 export interface AcademyEntry {
