@@ -29,6 +29,9 @@ body {
     font-size: 60px;
     text-shadow: 2px 3px 9px rgb(202, 186, 247)
   }
+  a{
+    text-decoration: none;
+  }
   .button {
     display: flex;
     align-items: center;
