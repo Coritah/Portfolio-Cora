@@ -2,8 +2,7 @@
 <div class="tools-bar">
   @for (tool of tools; track tool.name) {
     <div class="tool-icon" (click)="openModal(tool)">
-      <img [src]="'../../../assets/image/' + tool.icon" [alt]="tool.name" />
-      >
+      <img [src]="'assets/image/' + tool.icon" [alt]="tool.name" />
 
     </div>
   }
@@ -14,7 +13,7 @@
   <div class="tool-modal">
     <div class="modal-content">
       <h3>{{ selectedTool.name }}</h3>
-      <p>{{ selectedTool.description }}</p>
+      <span>{{ selectedTool.description }}</span>
     </div>
   </div>
 }
