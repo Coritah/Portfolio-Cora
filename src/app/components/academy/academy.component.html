@@ -6,7 +6,10 @@
       <li>
         <div class="content">
           <h3>{{ entry.degree }}</h3>
-          <p>{{ entry.name }}</p>
+          <p class="institution">
+            <img [src]="'assets/image/' + entry.image" [alt]="entry.name" class="academy-logo" />
+            {{ entry.name }}
+          </p>
           <span>{{ entry.startDate }} - {{ entry.endDate }}</span>
         </div>
       </li>
