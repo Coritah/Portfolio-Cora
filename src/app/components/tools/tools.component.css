@@ -1,13 +1,15 @@
 p {
   font-size: 50px;
   color: white;
+  padding-top: 100px;
   padding-bottom: 140px;
+  text-align: center;
 }
 .tools-bar {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  margin:0rem 2rem 0rem 2rem;
+  margin:0rem 20rem 0rem 20rem;
   overflow-x: auto;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);

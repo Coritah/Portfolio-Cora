@@ -3,7 +3,7 @@
 <div class="projects-container">
     @for (project of projects; track project.name) {
       <div class="project-card">
-        <img [src]="project.image || 'default.jpg'" [alt]="project.name">
+        <img [src]="'assets/image/' + project.image" [alt]="project.name">
         <div class="project-info">
           <h3>{{ project.name }}</h3>
           <span>{{ project.description }}</span>
