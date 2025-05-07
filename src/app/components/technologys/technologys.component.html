@@ -5,68 +5,84 @@
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Lenguajes</h3>
-        <ul>
+        <ul class="tech-list">
           @for (lang of technologies.languages; track lang.name) {
-            <li><strong>{{ lang.name }}:</strong> {{ lang.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + lang.image" [alt]="lang.name" class="tech-logo" />
+              <span>{{ lang.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
+    
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Frameworks</h3>
-        <ul>
+        <ul class="tech-list">
           @for (fw of technologies.frameworks; track fw.name) {
-            <li><strong>{{ fw.name }}:</strong> {{ fw.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + fw.image" [alt]="fw.name" class="tech-logo" />
+              <span>{{ fw.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
+    
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Bases de Datos</h3>
-        <ul>
+        <ul class="tech-list">
           @for (db of technologies.databases; track db.name) {
-            <li><strong>{{ db.name }}:</strong> {{ db.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + db.image" [alt]="db.name" class="tech-logo" />
+              <span>{{ db.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
+    
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Servicios en la nube</h3>
-        <ul>
+        <ul class="tech-list">
           @for (cs of technologies.cloudServices; track cs.name) {
-            <li><strong>{{ cs.name }}:</strong> {{ cs.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + cs.image" [alt]="cs.name" class="tech-logo" />
+              <span>{{ cs.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
+    
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Runtimes</h3>
-        <ul>
+        <ul class="tech-list">
           @for (rt of technologies.runtimes; track rt.name) {
-            <li><strong>{{ rt.name }}:</strong> {{ rt.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + rt.image" [alt]="rt.name" class="tech-logo" />
+              <span>{{ rt.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
+    
     <div class="col-12 col-md-6 col-xl-4">
       <div class="tech-card">
         <h3>Control de versiones</h3>
-        <ul>
+        <ul class="tech-list">
           @for (vc of technologies.versionControl; track vc.name) {
-            <li><strong>{{ vc.name }}:</strong> {{ vc.description }}</li>
+            <li>
+              <img [src]="'assets/image/' + vc.image" [alt]="vc.name" class="tech-logo" />
+              <span>{{ vc.name }}</span>
+            </li>
           }
         </ul>
       </div>
     </div>
-
-  </div>
-</div>
+    

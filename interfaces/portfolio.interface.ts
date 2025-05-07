@@ -41,6 +41,7 @@ export interface Technology {
   name: string;
   description: string;
   category: string;
+  image: string;
 }
 
 export interface Technologies {
@@ -55,6 +56,7 @@ export interface Technologies {
 export interface AcademyEntry {
   name: string;
   degree: string;
+  description: string;
   startDate: string;
   endDate: string;
 }

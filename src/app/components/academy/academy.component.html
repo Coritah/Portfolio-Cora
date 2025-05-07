@@ -1,1 +1,15 @@
-<p>academy works!</p>
+<p>Formación Académica</p>
+
+<div class="timeline">
+  <ul>
+    @for (entry of academy; track entry.name) {
+      <li>
+        <div class="content">
+          <h3>{{ entry.degree }}</h3>
+          <p>{{ entry.name }}</p>
+          <span>{{ entry.startDate }} - {{ entry.endDate }}</span>
+        </div>
+      </li>
+    }
+  </ul>
+</div>
