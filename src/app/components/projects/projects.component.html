@@ -7,7 +7,7 @@
         <div class="project-info">
           <h3>{{ project.name }}</h3>
           <span>{{ project.description }}</span>
-          <small>{{ project.startDate }} - {{ project.endDate }}</small>
+          <small>{{ project.startDate.substring(0,10) }} - {{ project.endDate.substring(0,10) }}</small>
           <ul>
             @for (tool of project.tools; track tool) {
               <li>{{ tool }}</li>

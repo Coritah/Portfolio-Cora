@@ -20,6 +20,7 @@ body {
   .text-zone {
     margin-top: -4vh;
     flex: 1;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,26 +52,38 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     z-index: 2;
-    h4{
-      font-size: 15px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #ffffff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      margin-bottom: 1rem;
-      max-width: 90%;
-    }
   }
-  
   .button.alternative {
     background: #362A89;
     --hover-back: #000000;
     --hover-front: #F6F8FF;
   }
+  .perfil {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .perfil-content {
+    width: 100%;
+    max-width: 770px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .perfil-content p {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+  }
+  
   
   .button::before,
   .button::after {
@@ -245,7 +258,6 @@ margin-left: -20px;
       box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
     }
   }
-  
   @media (max-width: 768px) {
     .nav-btns {
       top: 20px;
@@ -264,7 +276,15 @@ margin-left: -20px;
   .btns{
     padding-bottom: 0px;
   }
+  .perfil-content {
+    padding: 0.5rem;
+    
+  }
 
+  .perfil-content p {
+    font-size: 14px;
+    padding: 0.75rem;
+  }
     .mini-btns {
       margin-top: 0; 
     }
