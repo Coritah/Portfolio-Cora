@@ -5,10 +5,11 @@ import { ToolsComponent } from "../../components/tools/tools.component";
 import { TechnologysComponent } from "../../components/technologys/technologys.component";
 import { Contact, Portfolio } from '../../../../interfaces/portfolio.interface';
 import { PortfolioService } from '../../services/porfolio.service';
+import { AcademyComponent } from "../../components/academy/academy.component";
 
 @Component({
   selector: 'app-singlepage',
-  imports: [BannerSvgComponent, ProjectsComponent, ToolsComponent, TechnologysComponent],
+  imports: [BannerSvgComponent, ProjectsComponent, ToolsComponent, TechnologysComponent, AcademyComponent],
   templateUrl: './singlepage.component.html',
   styleUrl: './singlepage.component.css',
   encapsulation: ViewEncapsulation.None,
