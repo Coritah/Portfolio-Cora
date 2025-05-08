@@ -13,6 +13,6 @@ export class PortfolioService {
   private httpClient = inject(HttpClient);
 
  getLastPortfolio(): Promise<Portfolio> {
-    return lastValueFrom(this.httpClient.get<Portfolio>(`${this.apiUrl}`));
+    return lastValueFrom(this.httpClient.get<Portfolio>(`${this.apiUrl}/last`));
   }
 }
