@@ -70,7 +70,7 @@ export interface Certification {
   date: string;
 }
 
-export interface Language {
+export interface Linguas {
   name: string;
   level: string;
 }
@@ -104,7 +104,7 @@ export interface Portfolio {
   technologies: Technologies;
   academy: AcademyEntry[];
   certifications: Certification[];
-  languages: Language[];
+  languages: Linguas[];
   hobbies: Hobby[];
   achievements: Achievement[];
   references: Reference[];

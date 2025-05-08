@@ -15,7 +15,7 @@ export class TechnologysComponent {
     try {
       const portfolio = await this.portfolioService.getLastPortfolio();
       this.technologies = portfolio.technologies;
-    } catch (error) {(error);
+    } catch (error) {( error);
     }
   }
   }

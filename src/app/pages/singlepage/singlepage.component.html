@@ -1,87 +1,87 @@
-<section class="hero-container" id="top">
-  <div class="text-zone container text-center">
-    <h1>{{ contact.name }} {{ contact.surname }}</h1>
-    <h2>FullStack Developer</h2>
-    <div class="disponible-badge">
-      <span class="punto"></span>
-      <span class="texto">En busca de empleo</span>
-    </div>
-    
-  </div>
-<div class="ondasbnn">
-  <banner-svg></banner-svg>
-</div>
-<div class="perfil">
-  <div class="perfil-content">
-    <div class="avatar-wrapper">
-      <img src="../../../assets/image/blob.svg" alt="blob decorativo" class="blob">
-      <img src="../../../assets/image/perfil.svg" alt="perfil" class="avatar">
-    </div>
-    <p>{{ contact.description }}</p>
-  </div>
-</div>
 
-  <div class="btns">
-    <a href="assets/mi-cv.pdf" download class="button alternative">
-      <i class="fas fa-download"></i> <span class="text">Descargar CV</span>
-    </a>
-    
-    <a href="https://github.com/Coritah" target="_blank" class="button alternative">
-      <i class="fab fa-github"></i> <span class="text">GitHub</span>
-    </a>
-    
-    
-    <a href="https://www.linkedin.com/in/coritadev/" target="_blank" class="button alternative">
-      <i class="fab fa-linkedin"></i> <span class="text">LinkedIn</span>
-    </a>
-    
- 
+  <section class="hero-container" id="top">
+    <div class="text-zone container text-center">
+      <h1>{{ contact.name }} {{ contact.surname }}</h1>
+      <h2>FullStack Developer</h2>
+      <div class="disponible-badge">
+        <span class="punto"></span>
+        <span class="texto">En busca de empleo</span>
+      </div>
+      
+    </div>
+  <div class="ondasbnn">
+    <banner-svg></banner-svg>
+  </div>
+  <div class="perfil">
+    <div class="perfil-content">
+      <div class="avatar-wrapper">
+        <img src="../../../assets/image/blob.svg" alt="blob decorativo" class="blob">
+        <img src="../../../assets/image/perfil.svg" alt="perfil" class="avatar">
+      </div>
+      <p>{{ contact.description }}</p>
+    </div>
   </div>
   
-
-  <div class="nav-btns">
-    <div class="mini-btns">
-      <button class="circle-glow"(click)="scrollToSection('proyectos')">
-        <span class="label">Proyectos</span>
-        <span class="dot"></span>
-      </button>
+    <div class="btns">
+      <a href="assets/mi-cv.pdf" download class="button alternative">
+        <i class="fas fa-download"></i> <span class="text">Descargar CV</span>
+      </a>
+      
+      <a href="https://github.com/Coritah" target="_blank" class="button alternative">
+        <i class="fab fa-github"></i> <span class="text">GitHub</span>
+      </a>
+      
+      
+      <a href="https://www.linkedin.com/in/coritadev/" target="_blank" class="button alternative">
+        <i class="fab fa-linkedin"></i> <span class="text">LinkedIn</span>
+      </a>
+      
+   
     </div>
-    <div class="mini-btns">
-      <button class="circle-glow" (click)="scrollToSection('tools')">
-        <span class="label">Herramientas</span>
-        <span class="dot"></span>
-      </button>
+    
+  
+    <div class="nav-btns">
+      <div class="mini-btns">
+        <button class="circle-glow"(click)="scrollToSection('proyectos')">
+          <span class="label">Proyectos</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+      <div class="mini-btns">
+        <button class="circle-glow" (click)="scrollToSection('tools')">
+          <span class="label">Herramientas</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+      <div class="mini-btns">
+        <button class="circle-glow"(click)="scrollToSection('technologies')">
+          <span class="label">Tecnologías</span>
+          <span class="dot"></span>
+        </button>
+      </div>
+      <div class="mini-btns">
+        <button class="circle-glow"(click)="scrollToSection('academy')">
+          <span class="label">Formación</span>
+          <span class="dot"></span>
+        </button>
+      </div>    
     </div>
-    <div class="mini-btns">
-      <button class="circle-glow"(click)="scrollToSection('technologies')">
-        <span class="label">Tecnologías</span>
-        <span class="dot"></span>
-      </button>
-    </div>
-    <div class="mini-btns">
-      <button class="circle-glow"(click)="scrollToSection('academy')">
-        <span class="label">Formación</span>
-        <span class="dot"></span>
-      </button>
-    </div>    
-  </div>
-</section>
-<section id="proyectos">
-  <projects></projects>
-</section>
-
-<section id="tools">
-<tools></tools>
-</section>
-
-<section id="technologies">
-  <technologys></technologys>
   </section>
-
-  <section id="academy">
-    <academy></academy>
+  <section id="proyectos">
+    <projects></projects>
   </section>
-  @if (showGoTop) {
-  <button class="go-top-btn" (click)="scrollToSection('top')" aria-label="Go to top">
-    ⬆️
-  </button>  }
+  
+  <section id="tools">
+  <tools></tools>
+  </section>
+  
+  <section id="technologies">
+    <technologys></technologys>
+    </section>
+  
+    <section id="academy">
+      <academy></academy>
+    </section>
+    @if (showGoTop) {
+    <button class="go-top-btn" (click)="scrollToSection('top')" aria-label="Go to top"> ⬆
+    </button>  }
