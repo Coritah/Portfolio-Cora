@@ -74,5 +74,5 @@ export class SinglepageComponent {
       pyts.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  
+
 }

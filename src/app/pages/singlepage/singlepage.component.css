@@ -242,9 +242,32 @@ margin-left: -20px;
     height: 6px;
     background-color: #00ff00; 
     border-radius: 50%;
-    position: relative;
+     position: relative;
     box-shadow: 0 0 5px #00ff00; 
     animation: halo 1.5s infinite;
+  }
+  .go-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  .go-top-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-8px); }
+    50% { transform: translateY(0); }
+    70% { transform: translateY(-4px); }
   }
   
   @keyframes halo {

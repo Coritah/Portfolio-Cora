@@ -1,4 +1,4 @@
-<section class="hero-container">
+<section class="hero-container" id="top">
   <div class="text-zone container text-center">
     <h1>{{ contact.name }} {{ contact.surname }}</h1>
     <h2>FullStack Developer</h2>
@@ -77,3 +77,7 @@
   <section id="academy">
     <academy></academy>
   </section>
+
+  <button class="go-top-btn" (click)="scrollToSection('top')" aria-label="Go to top">
+    ⬆️
+  </button>  
