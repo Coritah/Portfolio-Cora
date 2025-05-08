@@ -1,4 +1,4 @@
-import { Component, inject, ViewEncapsulation } from '@angular/core';
+import { Component,HostListener, inject, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { ToolsComponent } from "../../components/tools/tools.component";
@@ -74,5 +74,11 @@ export class SinglepageComponent {
       pyts.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  showGoTop = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.showGoTop = window.scrollY > 300;
+  }
+  
 }
