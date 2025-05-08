@@ -17,7 +17,7 @@ export class AcademyComponent {
       const portfolio = await this.portfolioService.getLastPortfolio();
       this.academy = portfolio.academy;
     } catch (error) {
-      console.error('Error al cargar la academia:', error);
+      console.error(error);
     }
   }
 }

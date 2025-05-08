@@ -56,12 +56,12 @@ export class SinglepageComponent {
       if (icon) button.appendChild(icon);
       button.appendChild(div);
       button.addEventListener('mouseenter', () => {
-        console.log('Mouse enter');
+       
         button.classList.add('in');
         div.classList.add('animate');
       });
       button.addEventListener('mouseleave', () => {
-        console.log('Mouse leave');
+      
         button.classList.remove('in');
         div.classList.remove('animate');
       });

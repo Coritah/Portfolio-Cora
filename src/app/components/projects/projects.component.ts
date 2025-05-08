@@ -16,8 +16,7 @@ export class ProjectsComponent {
     try {
       const portfolio = await this.portfolioService.getLastPortfolio();
       this.projects = portfolio.projects;
-    } catch (error) {
-      console.error('Error al cargar los proyectos:', error);
+    } catch (error) {(error);
     }
   }
 }

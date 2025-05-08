@@ -17,9 +17,7 @@ export class ToolsComponent {
     try {
       const portfolio = await this.portfolioService.getLastPortfolio();
       this.tools = portfolio.tools;
-    } catch (error) {
-      console.error('Error cargando portfolio:', error);
-    }
+    } catch (error) {}
   }
   openModal(tool: Tool): void {
     this.selectedTool = tool;
