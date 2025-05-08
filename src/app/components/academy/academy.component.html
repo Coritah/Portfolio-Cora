@@ -10,7 +10,11 @@
             <img [src]="'assets/image/' + entry.image" [alt]="entry.name" class="academy-logo" />
             {{ entry.name }}
           </p>
-          <span>{{ entry.startDate }} - {{ entry.endDate }}</span>
+          <small>
+            Inicio: {{ entry.startDate.substring(0, 10) }}<br>
+            Fin: {{ entry.endDate.substring(0, 10) }}
+          </small>
+          
         </div>
       </li>
     }
