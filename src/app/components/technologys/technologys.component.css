@@ -18,7 +18,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* GRILLA de tecnologías */
 .tech-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -43,7 +42,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-/* VISTA estilo “dado 5” en pantallas grandes */
+
 @media (min-width: 1200px) {
   .tech-list {
     grid-template-columns: repeat(3, 1fr);

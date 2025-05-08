@@ -26,6 +26,8 @@ export interface Project {
   description: String; 
   image:String;
   tools: string[];
+  urlGit:String ,
+  urlWeb: String ,
   startDate: string;
   endDate: string;
 }

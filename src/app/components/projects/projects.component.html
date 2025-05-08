@@ -1,21 +1,30 @@
 <p>Proyectos Destacados</p>
 
 <div class="projects-container">
-    @for (project of projects; track project.name) {
-      <div class="project-card">
-        <img [src]="'assets/image/' + project.image" [alt]="project.name">
-        <div class="project-info">
-          <h3>{{ project.name }}</h3>
-          <span>{{ project.description }}</span>
-          <small>{{ project.startDate.substring(0,10) }} - {{ project.endDate.substring(0,10) }}</small>
-          <ul>
-            @for (tool of project.tools; track tool) {
-              <li>{{ tool }}</li>
-            }
-          </ul>
-          
+  @for (project of projects; track project.name) {
+    <div class="project-card">
+      <img [src]="'assets/image/' + project.image" [alt]="project.name">
+      <div class="project-info">
+        <h3>{{ project.name }}</h3>
+        <span>{{ project.description }}</span><hr>
+        <small>Inicio: {{ project.startDate.substring(0,10) }} <br>Fin: {{ project.endDate.substring(0,10) }}</small>
+        <ul>
+          @for (tool of project.tools; track tool) {
+            <li>{{ tool }}</li>
+          }
+        </ul>
+
+        <!-- Aquí adentro, dentro del bucle -->
+        <div class="project-links">
+          <a [href]="project.urlGit" target="_blank">
+            <img src="assets/icons/github.svg" alt="GitHub" class="link-icon">
+          </a>
+          <a [href]="project.urlWeb" target="_blank">
+            <img src="assets/icons/web.svg" alt="Sitio Web" class="link-icon">
+          </a>
         </div>
+
       </div>
-    }
-  </div>
-  
+    </div>
+  }
+</div>
