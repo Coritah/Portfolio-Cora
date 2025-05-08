@@ -183,22 +183,23 @@ body {
   }
   
 .nav-btns .mini-btns:nth-child(1) .label {
-margin-left: -1px;
+margin-left: 82px;
 }
 .nav-btns .mini-btns:nth-child(2) .label {
-margin-left: -30px;
+margin-left: 82px;
 
 }
 
 .nav-btns .mini-btns:nth-child(3) .label {
-margin-left: -20px;
+margin-left: 82px;
 }
 .nav-btns .mini-btns:nth-child(4) .label {
-  margin-left: -20px;
+  margin-left: 82px;
   }
 
   .mini-btns {
     display: flex;
+    position: relative;
     align-items: center;
     margin-top: 40px;
     overflow: visible; 
@@ -255,6 +256,7 @@ margin-left: -20px;
     margin-top: 10px;
     display: inline-flex;
     align-items: center;
+    z-index: 11;
     background-color: #2d2b45;
     color: #ffffff;
     padding: 6px 12px;
@@ -311,13 +313,13 @@ margin-left: -20px;
   @media (max-width: 768px) {
     .nav-btns {
       top: 20px;
-      right: 10px;
+      right: 0px;
       transform: none;
       flex-direction: row;
-      gap: 110px;
+      gap: 70px;
       align-items: center;
       z-index: 8 ;
-      margin-right: 40px;
+      /* margin-right: 40px; */
     }
     .ondasbnn{
       z-index: 3 ;
@@ -340,8 +342,13 @@ margin-left: -20px;
   }
     .mini-btns {
       margin-top: 0; 
+      position: relative
     }
-  
+    .nav-btns .mini-btns .label {
+      writing-mode: vertical-rl; 
+      transform: rotate(180deg); 
+    }    
+    
     .circle-glow {
       width: 35px;
       height: 35px;
@@ -349,18 +356,18 @@ margin-left: -20px;
   
     .circle-glow .label {
       font-size: 20px;
-      left: -50px;
+      bottom: 0px;
     }
   }
-  .nav-btns .mini-btns:nth-child(1) .label {
-    margin-left: -30px;
+   .nav-btns .mini-btns:nth-child(1) .label {
+    margin-bottom: -130px;
     }
     .nav-btns .mini-btns:nth-child(2) .label {
-    margin-left: -60px; 
+    margin-bottom: -130px; 
     }
     .nav-btns .mini-btns:nth-child(3) .label {
-    margin-left: -50px;
+    margin-bottom: -130px;
     }
     .nav-btns .mini-btns:nth-child(4) .label {
-      margin-left: -40px;
-      }
+      margin-bottom: -130px;
+      } 
