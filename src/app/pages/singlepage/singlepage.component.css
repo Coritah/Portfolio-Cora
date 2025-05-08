@@ -183,18 +183,18 @@ body {
   }
   
 .nav-btns .mini-btns:nth-child(1) .label {
-margin-left: 82px;
+margin-left: -62px;
 }
 .nav-btns .mini-btns:nth-child(2) .label {
-margin-left: 82px;
+margin-left: -88px;
 
 }
 
 .nav-btns .mini-btns:nth-child(3) .label {
-margin-left: 82px;
+margin-left: -68px;
 }
 .nav-btns .mini-btns:nth-child(4) .label {
-  margin-left: 82px;
+  margin-left: -52px;
   }
 
   .mini-btns {
