@@ -1,28 +1,32 @@
 <p>Proyectos Destacados</p>
-
 <div class="projects-container">
   @for (project of projects; track project.name) {
     <div class="project-card">
       <img [src]="'assets/image/' + project.image" [alt]="project.name">
+      
       <div class="project-info">
         <h3>{{ project.name }}</h3>
-        <span>{{ project.description }}</span><hr>
-        <small>Inicio: {{ project.startDate.substring(0,10) }} <br>Fin: {{ project.endDate.substring(0,10) }}</small>
+        <span>{{ project.description }}</span>
+        <hr>
+        <div class="project-footer">
+          <small>
+            Inicio: {{ project.startDate.substring(0, 10) }}<br>
+            Fin: {{ project.endDate.substring(0, 10) }}
+          </small>
+          <div class="project-links">
+            <a [href]="project.urlGit" target="_blank">
+              <img src="assets/image/GitHub.webp" alt="GitHub" class="link-icon" />
+            </a>
+            <a [href]="project.urlWeb" target="_blank">
+              <img src="assets/image/web.webp" alt="Sitio Web" class="link-icon" />
+            </a>
+          </div>
+        </div>        
         <ul>
           @for (tool of project.tools; track tool) {
             <li>{{ tool }}</li>
           }
         </ul>
-
-        <div class="project-links">
-          <a [href]="project.urlGit" target="_blank">
-            <img src="assets/image/GitHub.webp" alt="GitHub" class="link-icon">
-          </a>
-          <a [href]="project.urlWeb" target="_blank">
-            <img src="assets/image/web.webp" alt="Sitio Web" class="link-icon">
-          </a>
-        </div>
-
       </div>
     </div>
   }
