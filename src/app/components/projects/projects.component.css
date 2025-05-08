@@ -23,10 +23,11 @@ p {
   overflow: hidden;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s ease, transform 0.5s ease;
 }
 .project-card:hover {
   transform: scale(1.05);
-  transition: transform 0.5s ease;
+  background: rgba(255, 255, 255, 0.05);
 }
 .project-card img {
   width: 100%;
@@ -62,6 +63,7 @@ p {
 }
 .link-icon:hover {
   transform: scale(1.2);
+  filter: brightness(2);
 }
 
 @media (min-width: 768px) {
