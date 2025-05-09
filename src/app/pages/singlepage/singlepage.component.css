@@ -1,373 +1,402 @@
+/* === Estilo general del body === */
 body {
   position: relative;
   margin: 0;
   height: 200vh;
   background-image: url("../../../assets/image/japaneasy.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   background-repeat: repeat-y;
+  background-position: top;
   background-attachment: fixed;
 }
+
+/* === Hero container === */
 .hero-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  .text-zone {
-    margin-top: -4vh;
-    flex: 1;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  h1{
-    font-size: 60px;
-    text-shadow: 2px 3px 9px rgb(202, 186, 247)
-  }
-  a{
-    text-decoration: none;
-  }
-  .button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 28px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    color: white;
-  }
-  .btns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding-bottom: 70px;
-    z-index: 2;
-  }
-  .button.alternative {
-    background: #362A89;
-    --hover-back: #000000;
-    --hover-front: #F6F8FF;
-  }
-  .perfil {
-    display: flex;
-    justify-content: center;
-    padding: -1rem;
-  }
-  
-  .perfil-content {
-    display: flex;
-    gap: 50px;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1000px;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
-  .perfil-content p {
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-left: 20px; 
-    flex: 1; 
-  }
-  
-  
-  .button::before,
-  .button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200%;
-    background: var(--pb, var(--hover-back));
-    border-radius: var(--br, 40%);
-    transform: translateY(var(--y, 50%));
-    transition: transform 0.3s ease, border-radius 0.3s ease;
-    opacity: 0.5;
-    pointer-events: none;
-  }
-  
-  .button::after {
-    --pb: var(--hover-front);
-  }
-  
-  .button.in::before,
-  .button.in::after {
-    --y: 0;
-    --br: 10%;
-  }
-  
-  .button .content {
-    z-index: 1;
-    position: relative;
-    display: flex;}
-  
-    .button .content span {
-      display: inline-block;
-      transform: translateY(0) rotate(0deg);
-      transition: transform 0.4s ease;
-      animation: move 0.5s ease-out forwards;
-      animation-delay: calc(var(--i) * 0.05s);
-    }
-  
-    .button .content:not(.animate) span {
-      animation: none;
-    }
-  
- @keyframes move {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* === Zona de texto === */
+.text-zone {
+  margin-top: -4vh;
+  flex: 1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-shadow: 2px 3px 9px rgb(202, 186, 247);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* === Botones === */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 28px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
+}
+
+.button.alternative {
+  background: #362A89;
+  --hover-back: #000000;
+  --hover-front: #F6F8FF;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200%;
+  background: var(--pb, var(--hover-back));
+  border-radius: var(--br, 40%);
+  transform: translateY(var(--y, 50%));
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button::after {
+  --pb: var(--hover-front);
+}
+
+.button.in::before,
+.button.in::after {
+  --y: 0;
+  --br: 10%;
+}
+
+.button .content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+}
+
+.button .content span {
+  display: inline-block;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.4s ease;
+  animation: move 0.5s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+.button .content:not(.animate) span {
+  animation: none;
+}
+
+@keyframes move {
   30% {
     transform: translateY(-6px) rotate(-13deg);
   }
   100% {
     transform: translateY(0) rotate(0deg);
   }
-  }
-  banner-svg {
-    position: absolute;
-    bottom: 200px; 
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-   .nav-btns {
-    position: fixed;    
-    right: 50px;             
-    top: 20%;                
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 3;
-              
-  }
-  .avatar-wrapper {
-    position: relative;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .blob {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 210px;
-    height: 210px;
-    z-index: 0;
-  }  
-  
-  .avatar {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    border-radius: 50%;
-  }
-  
-.nav-btns .mini-btns:nth-child(1) .label {
-margin-left: -62px;
 }
-.nav-btns .mini-btns:nth-child(2) .label {
-margin-left: -88px;
 
+/* === Contenedor de botones principales === */
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 70px;
+  z-index: 2;
+}
+
+/* === Perfil === */
+.perfil {
+  display: flex;
+  justify-content: center;
+  padding: -1rem;
+}
+
+.perfil-content {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.perfil-content p {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+  flex: 1;
+}
+
+/* === Avatar y blob === */
+.avatar-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.blob {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 210px;
+  height: 210px;
+  z-index: 0;
+}
+
+.avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+/* === Botones de navegación fijos === */
+.nav-btns {
+  position: fixed;
+  right: 50px;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 3;
+}
+
+.mini-btns {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 40px;
+  overflow: visible;
+}
+
+/* === Efecto glow de botones === */
+.circle-glow {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.circle-glow .dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 2;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.circle-glow:hover .dot {
+  box-shadow: 0 0 20px 8px rgb(202, 186, 247);
+}
+
+.circle-glow .label {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  color: white;
+  font-size: 20px;
+  font-weight: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.circle-glow:hover .label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* === Ajustes de posición por botón === */
+.nav-btns .mini-btns:nth-child(1) .label {
+  margin-left: -62px;
+}
+
+.nav-btns .mini-btns:nth-child(2) .label {
+  margin-left: -88px;
 }
 
 .nav-btns .mini-btns:nth-child(3) .label {
-margin-left: -68px;
+  margin-left: -68px;
 }
+
 .nav-btns .mini-btns:nth-child(4) .label {
   margin-left: -52px;
+}
+
+/* === Badge disponible === */
+.disponible-badge {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  z-index: 11;
+  background-color: #2d2b45;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 8px;
+  box-shadow: 0 0 10px #1c1c2b;
+}
+
+.punto {
+  width: 6px;
+  height: 6px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 5px #00ff00;
+  animation: halo 1.5s infinite;
+}
+
+/* === Botón subir arriba === */
+.go-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.go-top-btn:hover {
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-8px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-4px); }
+}
+
+@keyframes halo {
+  0% {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .nav-btns {
+    top: 20px;
+    right: 0px;
+    transform: none;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    z-index: 8;
   }
 
-  .mini-btns {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-top: 40px;
-    overflow: visible; 
+  .ondasbnn {
+    z-index: 3;
+    bottom: 500px;
   }
-  
-  .circle-glow {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible; 
-  }
-  
-  
-  .circle-glow .dot {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 2;
-    transition: box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  
-  .circle-glow:hover .dot {
-    box-shadow: 0 0 20px 8px rgb(202, 186, 247); 
-  }
-  
-  .circle-glow .label {
-    position: absolute;
-    left: -80px;
-    top: 50%;
-    transform: translateY(-50%) translateX(10px);
-    color: white;
-    font-size: 20px;
-    font-weight: 50px;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    white-space: nowrap;
-  }
-  
-  .circle-glow:hover .label {
-    opacity: 1;
-    transform: translateY(-50%) translateX(0);
-  }
-  
-  .disponible-badge {
-    margin-top: 10px;
-    display: inline-flex;
-    align-items: center;
-    z-index: 11;
-    background-color: #2d2b45;
-    color: #ffffff;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    gap: 8px;
-    box-shadow: 0 0 10px #1c1c2b;
-  }
-  .punto {
-    width: 6px;
-    height: 6px;
-    background-color: #00ff00; 
-    border-radius: 50%;
-     position: relative;
-    box-shadow: 0 0 5px #00ff00; 
-    animation: halo 1.5s infinite;
-  }
-  .go-top-btn {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    font-size: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    animation: bounce 2s infinite;
-    transition: transform 0.3s ease;
-  }
-  
-  .go-top-btn:hover {
-    transform: scale(1.2);
-  }
-  
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    30% { transform: translateY(-8px); }
-    50% { transform: translateY(0); }
-    70% { transform: translateY(-4px); }
-  }
-  
-  @keyframes halo {
-    0% {
-      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
-    }
-    50% {
-      box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
-    }
-    100% {
-      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
-    }
-  }
-  @media (max-width: 768px) {
-    .nav-btns {
-      top: 20px;
-      right: 0px;
-      transform: none;
-      flex-direction: row;
-      gap: 70px;
-      align-items: center;
-      z-index: 8 ;
-      /* margin-right: 40px; */
-    }
-    .ondasbnn{
-      z-index: 3 ;
-      bottom: 500px ;
-    }
-  .btns{
+
+  .btns {
     padding-bottom: 0px;
   }
+
   .perfil-content {
     padding: 0.5rem;
-    
   }
+
   .avatar-wrapper,
   .blob {
     display: none !important;
   }
+
   .perfil-content p {
     font-size: 14px;
     padding: 0.75rem;
   }
-    .mini-btns {
-      margin-top: 0; 
-      position: relative
-    }
-    .nav-btns .mini-btns .label {
-      writing-mode: vertical-rl; 
-      transform: rotate(180deg); 
-    }    
-    
-    .circle-glow {
-      width: 35px;
-      height: 35px;
-    }
-  
-    .circle-glow .label {
-      font-size: 20px;
-      bottom: 0px;
-    }
+
+  .mini-btns {
+    margin-top: 0;
+    position: relative;
   }
-   .nav-btns .mini-btns:nth-child(1) .label {
-    margin-bottom: -130px;
-    }
-    .nav-btns .mini-btns:nth-child(2) .label {
-    margin-bottom: -130px; 
-    }
-    .nav-btns .mini-btns:nth-child(3) .label {
-    margin-bottom: -130px;
-    }
-    .nav-btns .mini-btns:nth-child(4) .label {
-      margin-bottom: -130px;
-      } 
+
+  .nav-btns .mini-btns .label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  .circle-glow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .circle-glow .label {
+    font-size: 20px;
+    bottom: 0px;
+  }
+
+  .nav-btns .mini-btns:nth-child(1) .label {
+    margin-bottom: -140px;
+    margin-left: 78px;
+  }
+
+  .nav-btns .mini-btns:nth-child(2) .label {
+    margin-bottom: -180px;
+    margin-left: 78px;
+  }
+
+  .nav-btns .mini-btns:nth-child(3) .label {
+    margin-bottom: -160px;
+    margin-left: 78px;
+  }
+
+  .nav-btns .mini-btns:nth-child(4) .label {
+    margin-bottom: -140px;
+    margin-left: 80px;
+  }
+}
