@@ -22,7 +22,7 @@ body {
 
 /* === Zona de texto === */
 .text-zone {
-  margin-top: -4vh;
+  padding-top: 5vh;
   flex: 1;
   gap: 20px;
   display: flex;
@@ -121,7 +121,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   z-index: 2;
 }
 
@@ -130,6 +130,7 @@ a {
   display: flex;
   justify-content: center;
   padding: -1rem;
+  padding-bottom: 20px;
 }
 
 .perfil-content {
@@ -197,6 +198,10 @@ a {
   align-items: center;
   margin-top: 40px;
   overflow: visible;
+}
+.cont{
+  position: relative;
+  top: -70px;
 }
 
 /* === Efecto glow de botones === */
