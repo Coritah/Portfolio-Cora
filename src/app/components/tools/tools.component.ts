@@ -1,4 +1,4 @@
-import { Component, inject, } from '@angular/core';
+import { Component, } from '@angular/core';
 import { Tool } from '../../interfaces/portfolio.interface';
 import  portfolio  from '../../data/porfolio.data.json';
 

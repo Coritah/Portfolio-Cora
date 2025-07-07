@@ -12,7 +12,7 @@ export interface EmergencyContact {
 
 export interface Contact {
   name: string;
-  description: String; 
+  description: string; 
   surname: string;
   email: string;
   phone: string;

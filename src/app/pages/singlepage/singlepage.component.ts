@@ -1,9 +1,9 @@
-import { Component,HostListener, inject, ViewEncapsulation } from '@angular/core';
+import { Component,HostListener, ViewEncapsulation } from '@angular/core';
 import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.component";
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { ToolsComponent } from "../../components/tools/tools.component";
 import { TechnologysComponent } from "../../components/technologys/technologys.component";
-import { Contact, Portfolio } from '../../interfaces/portfolio.interface';
+import { Contact } from '../../interfaces/portfolio.interface';
 import  portfolio  from '../../data/porfolio.data.json';
 import { AcademyComponent } from "../../components/academy/academy.component";
 
