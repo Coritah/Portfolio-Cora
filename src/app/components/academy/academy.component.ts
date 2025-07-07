@@ -1,7 +1,6 @@
-import { Component, inject } from '@angular/core';
-import { AcademyEntry } from '../../../../interfaces/portfolio.interface';
-import { PortfolioService } from '../../services/porfolio.service';
-
+import { Component } from '@angular/core';
+import { AcademyEntry } from '../../interfaces/portfolio.interface';
+import  portfolio  from '../../data/porfolio.data.json';
 @Component({
   selector: 'academy',
   imports: [],
@@ -10,14 +9,8 @@ import { PortfolioService } from '../../services/porfolio.service';
 })
 export class AcademyComponent {
   academy: AcademyEntry[] = [];
-  private portfolioService = inject(PortfolioService);
 
   async ngOnInit() {
-    try {
-      const portfolio = await this.portfolioService.getLastPortfolio();
-      this.academy = portfolio.academy;
-    } catch (error) {
-      console.error(error);
-    }
+    this.academy = portfolio.academy;
   }
 }

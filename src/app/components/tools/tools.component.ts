@@ -1,6 +1,6 @@
 import { Component, inject, } from '@angular/core';
-import { Tool } from '../../../../interfaces/portfolio.interface';
-import { PortfolioService } from '../../services/porfolio.service';
+import { Tool } from '../../interfaces/portfolio.interface';
+import  portfolio  from '../../data/porfolio.data.json';
 
 @Component({
   selector: 'tools',
@@ -9,15 +9,14 @@ import { PortfolioService } from '../../services/porfolio.service';
 })
 export class ToolsComponent {
   
-  private portfolioService = inject(PortfolioService);
+ 
   tools: Tool[] = [];
   selectedTool: Tool | null = null;
 
   async ngOnInit() {
-    try {
-      const portfolio = await this.portfolioService.getLastPortfolio();
+ 
       this.tools = portfolio.tools;
-    } catch (error) {}
+   
   }
   openModal(tool: Tool): void {
     this.selectedTool = tool;

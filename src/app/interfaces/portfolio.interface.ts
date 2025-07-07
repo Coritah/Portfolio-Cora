@@ -23,11 +23,11 @@ export interface Contact {
 
 export interface Project {
   name: string;
-  description: String; 
-  image:String;
+  description: string; 
+  image:string;
   tools: string[];
-  urlGit:String ,
-  urlWeb: String ,
+  urlGit:string ,
+  urlWeb?: string ,
   startDate: string;
   endDate: string;
 }

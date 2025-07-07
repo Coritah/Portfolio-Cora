@@ -3,8 +3,8 @@ import { BannerSvgComponent } from "../../components/banner-svg/banner-svg.compo
 import { ProjectsComponent } from "../../components/projects/projects.component";
 import { ToolsComponent } from "../../components/tools/tools.component";
 import { TechnologysComponent } from "../../components/technologys/technologys.component";
-import { Contact, Portfolio } from '../../../../interfaces/portfolio.interface';
-import { PortfolioService } from '../../services/porfolio.service';
+import { Contact, Portfolio } from '../../interfaces/portfolio.interface';
+import  portfolio  from '../../data/porfolio.data.json';
 import { AcademyComponent } from "../../components/academy/academy.component";
 
 @Component({
@@ -16,11 +16,9 @@ import { AcademyComponent } from "../../components/academy/academy.component";
 })
 export class SinglepageComponent {
   contact!: Contact;
-  private portfolioService = inject(PortfolioService);
 
   async ngOnInit(): Promise<void> {
 
-    const portfolio: Portfolio = await this.portfolioService.getLastPortfolio();
     this.contact = portfolio.contact;
 
     document.querySelectorAll('.button').forEach(button => {

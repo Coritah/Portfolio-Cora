@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { Technologies } from '../../../../interfaces/portfolio.interface';
-import { PortfolioService } from '../../services/porfolio.service';
+import { Technologies } from '../../interfaces/portfolio.interface';
+import  portfolio  from '../../data/porfolio.data.json';
 
 @Component({
   selector: 'technologys',
@@ -8,14 +8,11 @@ import { PortfolioService } from '../../services/porfolio.service';
   styleUrls: ['./technologys.component.css'],
 })
 export class TechnologysComponent {
-  private portfolioService = inject(PortfolioService);
   technologies!: Technologies;
 
   async ngOnInit() {
-    try {
-      const portfolio = await this.portfolioService.getLastPortfolio();
+
       this.technologies = portfolio.technologies;
-    } catch (error) {( error);
-    }
+   
   }
   }

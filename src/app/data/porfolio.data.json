@@ -1,0 +1,235 @@
+{
+    "contact": {
+      "name": "Cora Y.",
+      "surname": "Courbenas",
+      "description": "Apasionada del desarrollo web, recientemente he superado un bootcamp intensivo donde adquirí conocimientos en programación. Mi experiencia previa se desarrolló en el ámbito de la atención al cliente, donde desarrollé habilidades como la resolución de problemas, el trabajo en equipo y la comunicación efectiva. Estoy realizando una reconversión profesional hacia el sector tecnológico con gran motivación. Disfruto enfrentándome a nuevos retos y aprendiendo de cada experiencia. Estoy preparada para seguir creciendo como desarrolladora y aportar todo mi potencial en nuevos proyectos.",
+      "email": "coritadev@gmail.com",
+      "phone": "+34 000 000 000",
+      "social": [
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/coritadev/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/Coritah"
+        }
+      ],
+      "dateOfBirth": "1993-05-15",
+      "emergencyContact": {
+        "name": "Miguel Revuelta",
+        "relation": "Pareja",
+        "phone": "+34 629 153 388",
+        "email": "revuel22@hotmail.com"
+      }
+    },
+    "projects": [
+      {
+        "name": "Viajeros Unidos",
+        "description": "Aplicación web desarrollada con Angular que permite a los usuarios compartir y descubrir experiencias de viaje. Incluye funcionalidades como creación de publicaciones, comentarios y gestión de perfiles.",
+        "image": "Viajeros_Unidos.png",
+        "tools": ["Angular", "Node.js", "MySQL", "Bootstrap", "Express.js", "TypeScript"],
+        "startDate": "2025-04-09",
+        "endDate": "2025-04-29",
+        "urlGit":"https://github.com/JavierSP1997/appFrontViajes"
+  
+      },
+      {
+        "name": "Chat Cotorras",
+        "description": "Aplicación de chat en tiempo real que permite a los usuarios comunicarse de forma instantánea. Utiliza Firebase para la autenticación y almacenamiento de mensajes.",
+        "image": "Chat_Cotorras.png",
+        "tools": ["Angular", "Firebase"],
+        "startDate": "2025-04-08",
+        "endDate": "2025-04-08",
+        "urlGit":"https://github.com/Coritah/ChatCotorras",
+        "urlWeb":"https://chat-cotorras.web.app/chat"
+      },
+      {
+        "name": "Practica LocalStorage.",
+        "description": "Proyecto de práctica que incluye ejercicios y ejemplos para reforzar conocimientos en JavaScript, HTML y CSS. Aborda conceptos fundamentales y técnicas de desarrollo web.",
+        "image": "Local_Storage.png",
+        "tools": ["Javascript","HTML", "CSS", "Firebase"],
+        "startDate": "2025-02-24",
+        "endDate": "2025-03-03",
+        "urlGit": "https://github.com/Coritah/practicaJs"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Visual Studio Code",
+        "description": "Editor de código fuente",
+        "category": "IDE",
+        "icon": "Visual_Studio_Code.webp"
+      },
+      {
+        "name": "Sourcetree",
+        "description": "Herramienta que sirve como cliente gráfico para Git",
+        "category": "Control de versiones",
+        "icon":"Sourcetree.webp"
+      },
+      {
+        "name": "MySQL Workbench",
+        "description": "Herramienta visual para modelado y administración de bases de datos MySQL",
+        "category": "Base de Datos",
+        "icon":"MySQL_Workbench.webp"
+      },
+      {
+        "name": "MongoDB Compass",
+        "description": "Interfaz gráfica oficial para visualizar, consultar y administrar bases de datos MongoDB",
+        "category": "Base de Datos",
+        "icon":"MongoDB_Compass.webp"
+      },    
+      {
+        "name": "GitHub",
+        "description": "Plataforma para control de versiones y colaboración",
+        "category": "Control de versiones",
+        "icon":"GitHub.webp"
+      },
+      {
+        "name": "Figma",
+        "description": "Herramienta de diseño de interfaces y prototipado",
+        "category": "Diseño UI/UX",
+        "icon":"Figma.webp"
+      },
+      {
+        "name": "Trello",
+        "description": "Herramienta de gestión de tareas y proyectos",
+        "category": "Gestión de proyectos",
+        "icon":"Trello.webp"
+      }
+    ],
+    "technologies": {
+      "languages": [
+        {
+          "name": "JavaScript",
+          "description": "Lenguaje de programación web",
+          "category": "Frontend",
+          "image":"javascript.svg"
+        },
+        {
+          "name": "TypeScript",
+          "description": "Superset de JavaScript con tipado estático",
+          "category": "Frontend",
+           "image":"Typescript.webp"
+        },
+        {
+          "name": "HTML",
+          "description": "Lenguaje de marcado para estructurar contenido web",
+          "category": "Frontend",
+           "image":"html.svg"
+        },
+        {
+          "name": "CSS",
+          "description": "Lenguaje de estilos para diseño visual de páginas web",
+          "category": "Frontend",
+           "image":"css.svg"
+        },
+        {
+          "name": "SQL",
+          "description": "Lenguaje para gestionar bases de datos relacionales",
+          "category": "Base de Datos",
+           "image":"sql.webp"
+        }
+      ],
+      "frameworks": [
+        {
+          "name": "Angular",
+          "description": "Framework web basado en componentes",
+          "category": "Frontend",
+           "image":"angular.png"
+        },
+        {
+          "name": "Bootstrap",
+          "description": "Framework CSS para diseño responsivo",
+          "category": "Frontend",
+           "image":"bootstrap.webp"
+        }
+      ],
+      "libraries": [],
+      "databases": [
+        {
+          "name": "MySQL",
+          "description": "Base de datos relacional",
+          "category": "SQL",
+           "image":"mysql.png"
+        },
+        {
+          "name": "MongoDB",
+          "description": "Base de datos orientada a documentos",
+          "category": "NoSQL",
+           "image":"mongodb.svg"
+        }
+      ],
+      "cloudServices": [
+        {
+          "name": "Firebase",
+          "description": "Plataforma de desarrollo de apps en la nube",
+          "category": "Backend-as-a-Service",
+           "image":"firebase.webp"
+        }
+      ],
+     "versionControl": [
+    {
+      "name": "Git",
+      "description": "Sistema de control de versiones distribuido",
+      "category": "Version Control",
+       "image":"git.svg"
+    }
+  ],
+     "runtimes": [
+    {
+      "name": "Node.js",
+      "description": "Entorno de ejecución para JavaScript del lado del servidor",
+      "category": "Backend",
+       "image":"nodejs.svg"
+    }
+  ]
+    },
+    "academy": [
+      {
+        "name": "ID Bootcamp",
+        "degree": "Bootcamp Desarrollo Web Full Stack",
+        "description": "450 Horas",
+        "startDate": "2024-01-30",
+        "endDate": "2024-03-29",
+         "image":"id.png"
+      },
+      {
+        "name": "Centro para la Cultura y el Conocimiento",
+        "degree": "Formación online en Big Data",
+        "description": " 240 Horas",
+        "startDate":"2023-01-10",
+        "endDate":"2023-11-10",
+        "image":"ccc.webp"
+      }
+    ],
+    "linguas": [
+      {
+        "name": "Español",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Intermedio"
+      }
+    ],
+    "hobbies": [
+      {
+        "name": "Senderismo",
+        "description": "Explorar rutas y naturaleza"
+      },
+      {
+        "name": "Series TV",
+        "description": "Descubrir nuevas series"
+      }
+    ],
+    "achievements": [
+      {
+        "name": "Mejor proyecto del bootcamp",
+        "description": "Reconocimiento por 'Viajeros Unidos'",
+        "date": "2024-03-28"
+      }
+    ],
+    "references": []
+  }
+  
