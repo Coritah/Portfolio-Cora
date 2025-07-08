@@ -18,10 +18,13 @@
 }
 .linea-path {
   stroke: var(--line-color);
+  stroke-width: 2;
+  z-index: -3;
+  fill: none;
 }
 .contenedor-olas {
   position: relative;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 .grupo-olas {
@@ -81,13 +84,9 @@
 .volteado {
   transform: rotate(180deg);
 }
-.linea-path {
-  stroke-width: 2;
-  z-index: -3;
-  fill: none;
-}
+
 .ola-linea {
-  display: flex;;
+  display: flex;
   width: 2400px;
   animation: moverOlaLinea 20s linear infinite;
 }
