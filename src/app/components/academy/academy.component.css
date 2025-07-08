@@ -1,6 +1,7 @@
 p {
     font-size: 40px;
-    color: white;
+    color:rgb(198, 198, 198);
+    text-shadow: 2px 3px 9px rgb(180, 167, 216);
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;

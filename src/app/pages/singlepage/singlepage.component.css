@@ -33,7 +33,12 @@ body {
 
 h1 {
   font-size: 60px;
-  text-shadow: 2px 3px 9px rgb(202, 186, 247);
+  color:rgb(198, 198, 198);
+  text-shadow: 2px 3px 9px rgb(180, 167, 216);
+}
+h2{
+  color:rgb(198, 198, 198);
+  text-shadow: 2px 3px 9px rgb(180, 167, 216);
 }
 
 a {
@@ -295,7 +300,7 @@ a {
   animation: halo 1.5s infinite;
 }
 
-/* === Botón subir arriba === */
+/* === Botón arriba === */
 .go-top-btn {
   position: fixed;
   bottom: 2rem;

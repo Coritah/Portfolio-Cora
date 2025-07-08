@@ -18,8 +18,8 @@
       "dateOfBirth": "1993-05-15",
       "emergencyContact": {
         "name": "Miguel Revuelta",
-        "relation": "Pareja",
-        "phone": "+34 629 153 388",
+        "relation": "",
+        "phone": "+34 000 000 000",
         "email": "revuel22@hotmail.com"
       }
     },
@@ -69,31 +69,31 @@
       },
       {
         "name": "MySQL Workbench",
-        "description": "Herramienta visual para modelado y administración de bases de datos MySQL",
+        "description": "Herramienta visual para modelado y administración de bases de datos MySQL.",
         "category": "Base de Datos",
         "icon":"MySQL_Workbench.webp"
       },
       {
         "name": "MongoDB Compass",
-        "description": "Interfaz gráfica oficial para visualizar, consultar y administrar bases de datos MongoDB",
+        "description": "Interfaz gráfica oficial de MongoDB para visualizar, consultar y administrar bases de datos.",
         "category": "Base de Datos",
         "icon":"MongoDB_Compass.webp"
       },    
       {
         "name": "GitHub",
-        "description": "Plataforma para control de versiones y colaboración",
+        "description": "Plataforma para control de versiones y colaboración.",
         "category": "Control de versiones",
         "icon":"GitHub.webp"
       },
       {
         "name": "Figma",
-        "description": "Herramienta de diseño de interfaces y prototipado",
+        "description": "Herramienta de diseño de interfaces y prototipado.",
         "category": "Diseño UI/UX",
         "icon":"Figma.webp"
       },
       {
         "name": "Trello",
-        "description": "Herramienta de gestión de tareas y proyectos",
+        "description": "Herramienta de gestión de tareas y proyectos.",
         "category": "Gestión de proyectos",
         "icon":"Trello.webp"
       }
